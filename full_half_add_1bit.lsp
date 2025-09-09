@@ -1,4 +1,4 @@
-(module :name adder
+(module :name full_half_add_1bit
         ;; as soon as any of the signal is used or generated, it should be described for better understanding of code
         ;;
         (assign #{param:full_addr:0_1}
