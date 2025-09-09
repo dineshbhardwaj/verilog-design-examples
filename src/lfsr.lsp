@@ -6,6 +6,7 @@
             :d "LFSR logic"
             :rst_default ('h0) ;; not required, useful only if the default is different than 0
             :reset ((bit_count_o 4'b0)) ;; not required as default is programmed 0
-            ((data_out[3:0] = {data_out[2:0],#(data_out[1] ^ data_out[0])) ;; up counter
+            ((data_out[3:0] = {data_out[2:0],#(data_out[1] ^ data_out[0])) ;; new data value is obtained here
+             ;; here the output is temperary generated for any execution done between #()
             )
         )
